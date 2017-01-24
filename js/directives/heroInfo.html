@@ -1,0 +1,8 @@
+<img ng-src="{{ getImagePath(hero.image) }}" title="{{hero.name}}">
+<h3 class="textBlack ">{{ hero.name }}</h3>
+<p>Origin:  <span class="textBlack">{{ hero.origin }}</span></p>
+<p>Age: <span class="textBlack"> {{ hero.age || "unknown" }}</span></p>
+<p>Superpowers: <span class="superpowers" >{{ hero.superpowers.join(', ')}}</span></p>
+<p>Weaknesses: <span class="weakness">{{ hero.weaknesses.join(', ') }}</span><span class="weakness" ng-hide="hero.weaknesses.length">None</span></p>
+<button ng-show="!isFavorite(hero)" ng-click="addToFavorites(hero)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-heart-empty"></i> </button>
+<button ng-show="isFavorite(hero)" ng-click="deleteFromFavorite(hero)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-heart"></i> </button>

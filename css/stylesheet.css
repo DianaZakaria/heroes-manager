@@ -1,0 +1,42 @@
+.hasError {
+    color: red;
+    background-color: yellow;
+    display: block!important;
+}
+
+.hide {
+    display: none;
+}
+
+.header-logo {
+    width:25px;
+}
+
+.row {
+    background-color:#fafafa;
+}
+
+.hero {
+    min-height: 415px!important;
+}
+
+.heroes {
+    color: dimgray;
+}
+
+.pagination {
+    float: right;
+}
+
+.superpowers {
+    color: green;
+}
+
+.weakness {
+    color: #f15f43;
+}
+
+.textBlack {
+    color: black;
+}
+
